@@ -33,24 +33,39 @@ class User():
 		print(posts)
 
 class Post():
-	def __init__ (self, text, comment, likes):
+	def __init__ (self, text):
 		self.text = text
-		self.comment = comment
-		self.likes = likes
+		self.likes = 0
 
-	def add_post(self):
-		posts.append(text)
-
-	def F_comment(self,f_email):
-		comment.append(comment)
+	def F_comment(self,f_email,text):
+		comment1=Comment(text, f_email, self)
+		Comment.append(comment1)
 		print(f_email +  "has deighned to comment on"  + email + " wretched post")
 		print(comment.len)
 	
 	def F_likes(self):
-		
-		like.append(1)
+		self.like++
 		print(f_email + "has bestowed their favor on " + email + ". Be Happy!")
-		print( like.len)
+		# print( like.len)
+
+
+
+
+class Comment(Post):
+	def __init__ (self, text, f_email, post):
+		Post.__init__(self, text)
+		self.f_email = f_email
+		self.post = post
+
+
+	def delete_comment(self):
+		comment.remove(comment)
+	
+	def edit_comment(self, n_text):
+		comment.remove(self.text)
+		comment.append(n_text)
+		print( " Your last comment was a nightmare! Thank god you edited it!!!" )
+
 
 
 
@@ -58,7 +73,8 @@ class Post():
 user1 = User("Loai", "loai17@meet.mit.edu", "myhiddenpassword123")
 user2 = User("shelly", "shelly@meet.mit.edu", "mypassword567")
 user1.add_friend(user2.email)
-user1.post(" Hello",'ok',3)
+user1.post(" Hello, I humbly request your attention",'ok',3)
 user1.get_userinfo()
 user1.remove_friend(user2.email)
 
+Comment.add_comment(" Nice shoes babe!")
