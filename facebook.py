@@ -66,10 +66,7 @@ class Comment(Post):
 		comment.remove(self.text)
 		comment.append(n_text)
 		print( " Your last comment was a nightmare! Thank god you edited it!!!" )
-
-
-
-
+		
 post1=Post('I had toast with plain butter this morning. it fell on my lap.')
 user1 = User("Loai", "loai17@meet.mit.edu", "myhiddenpassword123")
 user2 = User("shelly", "shelly@meet.mit.edu", "mypassword567")
