@@ -22,7 +22,7 @@ class User():
 		self.text=text
 		self.comment=comment
 		self.likes=likes
-		post1=Post(text,comment,likes)
+		
 		posts.append(post1)
 
 	def get_userinfo(self):
@@ -37,15 +37,16 @@ class Post():
 		self.text = text
 		self.likes = 0
 
-	def F_comment(self,f_email,text):
-		comment1=Comment(text, f_email, self)
-		Comment.append(comment1)
-		print(f_email +  "has deighned to comment on"  + email + " wretched post")
-		print(comment.len)
+	def F_comment(self,f_email,text,email):
+		self.f_email=f_email
+		self.email=email
+		comment.append(self.text)
+		print(self.f_email +  " has deighned to comment on "  + self.email + " wretched post")
+		
 	
 	def F_likes(self):
-		self.like++
-		print(f_email + "has bestowed their favor on " + email + ". Be Happy!")
+		self.like = self.like +1
+		print(self.f_email + "has bestowed their favor on " + self.email + ". Be Happy!")
 		# print( like.len)
 
 
@@ -69,12 +70,14 @@ class Comment(Post):
 
 
 
-
+post1=Post('I had toast with plain butter this morning. it fell on my lap.')
 user1 = User("Loai", "loai17@meet.mit.edu", "myhiddenpassword123")
 user2 = User("shelly", "shelly@meet.mit.edu", "mypassword567")
 user1.add_friend(user2.email)
-user1.post(" Hello, I humbly request your attention",'ok',3)
+user1.post(" Hello, I humbly request your attention",'ok','3')
 user1.get_userinfo()
 user1.remove_friend(user2.email)
+comment1=Comment('do you want me to make you some more toast honey? ', 'shelly@meet.mit.edu','I had soup for lunch. It also spilled on my pants. ')
 
-Comment.add_comment(" Nice shoes babe!")
+Comment2=Post(' Do you need new pants honey? or maybe to attend basic manners class? ')
+Comment2.F_comment('shelly@meet.mit.edu'," Sure. Why not? Its free pants :) ",'loai17@meet.mit.edu')
