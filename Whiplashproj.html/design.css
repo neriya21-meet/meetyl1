@@ -1,0 +1,120 @@
+header{
+	color: black;
+	text-align: center;
+	font-size: 65px;
+	
+	
+
+
+}
+body{
+	background-color: indianred;
+	font-size: 90px;
+	
+
+}
+h1{
+	color:black;
+	text-align: center;
+	font-size:85px;
+
+	
+}
+
+p{
+
+	text-align:center;
+	font:italic bold 30px/55px Georgia, serif;
+	border: double;
+	background-color: silver;
+
+}
+
+button{
+	text-align: center;
+	display: inline-block;
+	border-radius: 8px;
+	border:none;
+	color: black;
+	font-size: 25px;
+	background-color:silver;
+	padding: 20px;
+	width:200px;
+	margin: 5px;
+
+
+}
+ button:hover{
+ 	background-color: black;
+ 	color:silver;
+ }
+
+#frozencar{
+	background-image: url("carcliff.png");
+	height: 100%;
+	background-size: 50% 50%;
+	background-repeat: no-repeat;
+	background-position: bottom;
+
+}
+#crash{
+	background-image: url("crash.jpg");
+	height: 100%;
+	background-size: 50% 50%;
+	background-repeat: no-repeat;
+	background-position: bottom;
+
+}
+
+#bye{
+	background-image: url("goodbye.png");
+	height: 100%;
+	background-size: 50% 65%;
+	background-repeat: no-repeat;
+	background-position: bottom;
+
+}
+
+#slumber{
+	background-image: url("slumber.jpg");
+	height: 100%;
+	background-size: 50% 60%;
+	background-repeat: no-repeat;
+	background-position: bottom;
+}
+
+#home{
+	background-image: url("slumber.jpg");
+	height: 100%;
+	background-size: 50% 60%;
+	background-repeat: no-repeat;
+	background-position: bottom;
+}
+
+/*#window{
+	background-image: url("bed.jpg");
+	height: 100%;
+	background-size: 50% 60%;
+	background-repeat: no-repeat;
+	background-position: bottom;*/
+
+/*#market{
+	background-image: url("bettermarket.jpg");
+	height: 100%;
+	background-size: 40% 40%;
+	background-repeat: no-repeat;
+	background-position: bottom;
+}*/
+
+
+/*#lookpark{
+	background-image: url("background.jpg");
+	height: 100%;
+	background-size: 40% 40%;
+	background-repeat: no-repeat;
+	background-position: bottom;*/
+/*
+}*/
+html{
+	height: 100%;
+}

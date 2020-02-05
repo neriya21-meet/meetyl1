@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<title>  CYOA Game </title>
+		<link rel="stylesheet" type="text/css" href="frontpg.css">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+.button {
+  border-radius: 2px;
+  background-color:grey ;
+
+
+
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 100px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+</style>
+
+
+<script> 
+
+var audio = new Audio('creepymusic.mp3');
+audio.play();
+
+</script>
+
+</head>
+
+<body>
+
+	<h1>Whiplash</h1>
+	<p> Warning: this story contains intense scenes. Do you wish to continue?</p>
+  <center>
+	<a href=" openpage.html"><button class="button"><span>Yes</span> </button></a>
+	<a href="byepage.html"><button class="button"><span>no</span></button> </a>
+	</center>
+	
+
+</body>
+
+</html>
